@@ -13,8 +13,8 @@ signed int signedInteger;
 
 [^1]: a piece of information.
 
-## Two's Complement Representation
-The most common method of representation for signed integers.  
+## Signed Magnitude Representation
+A method of representation for signed integers.  
 The bit with the greatest value is used to represent the sign (+/-) of the number.  
 1 = Negative  
 0 = Positive  
@@ -23,6 +23,28 @@ The bit with the greatest value is used to represent the sign (+/-) of the numbe
 1010 = -6
 ```
 
+## Two's Complement
+A method of representation for signed integers.
+Unlike signed magnitude, the most significant bit is used both as a sign indicator and as a contributor to the entire number, as a negative one.
+The two's complement is found by first finding the one's complement (flipping each bit), then adding 1 to that result.
+
+Example:
+```
+0111 (7)
+1000 (one's complement)
+1001 (two's complement)
+8421 (bit placement)
+-8 + 0 + 0 + 1 = -7
+```
+
+Practice:
+```
+01100 (12)
+10011 (one's complement)
+10100 (two's complement)
+16 8 4 2 1
+-16 + 0 + 4 + 0 + 0 = -12
+```
 ## Bit Addition, Subtraction, and Overflow Behavior
 ### Bit Addition
 Behaves similarly to decimal addition:  
