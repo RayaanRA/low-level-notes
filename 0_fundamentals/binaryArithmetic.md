@@ -1,7 +1,7 @@
 # Binary Arithmetic
 
 ## Unsigned vs. Signed Integers
-A signed integer is a x-bit datum[^1] that contains an integer in a range from a very small negative number to a very large positive number.
+A signed integer is an x-bit datum[^1] that contains an integer in a range from a very small negative number to a very large positive number.
 
 An unsigned integer is the same, but rather the range only includes nonnegative numbers, allowing for bigger positive numbers.
 
