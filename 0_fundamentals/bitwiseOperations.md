@@ -1,6 +1,6 @@
 # Bitwise Operations
 **Definition**  
-Bitwise operations are a set of operations done on a binary string that compares and manipulate the individual bits.  
+Bitwise operations are a set of operations done on a binary string that compares and manipulates the individual bits.  
 
 ## Bitwise AND
 For two inputs, each bit will be compared and will return 1 only if both bits are 1.
