@@ -6,7 +6,7 @@ A signed integer is a 32-bit datum[^1] that contains an integer in a range from 
 An unsigned integer is the same, but rather the range only includes nonnegative numbers, allowing for bigger positive numbers.
 
 The signed integer is represented in twos complement notation.
-```c
+```
 unsigned int unsignedInteger;
 signed int signedInteger;
 ```
@@ -19,8 +19,8 @@ The bit with the greatest value is used to represent the sign (+/-) of the numbe
 1 = Negative  
 0 = Positive  
 ```
-0110 = +6
-1010 = -6
+0010 = +2
+1010 = -2
 ```
 
 ## Two's Complement
@@ -74,4 +74,36 @@ Practice:
  1101 (correct)
 ```
 
-### Bit Subtraction
+### Bit Subtraction (Two's Complement Method)
+Instead of subtracting two numbers, bit subtraction with the two's complement method uses addition with a negative number.
+
+Example:  
+39 - 25 = 14
+39 + (-25) = 14
+```
+ 00100111 (39)
++1100111 (-25)
+---------
+10001110
+Overflow has occured, remove overflow bit (1)
+Answer: 0001110 (14)
+```
+
+Practice:
+12 - 19 = -7
+12 + (-19) = -7
+```
+0001100 (12)
+
+0010011 (19)
+1101100 (one's complement)
+1101101 (two's complement, -19)
+
+ 0001100
++1101101
+---------
+ 1111001
+
+64 32 16 8 4 2 1
+(-64) + 32 + 16 + 8 + 1 = -7
+```
