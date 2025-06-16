@@ -66,9 +66,9 @@ The placement of the 0s in the mask shows that the lower 4 bits are to kept, and
 0000-0101
 ```
 ### Setting, Clearing, and Toggling
-Setting: 0 → 1
-Clearing: 1 → 0
-Toggling: 1 → 0 or 0 → 1
+Setting: 0 → 1  
+Clearing: 1 → 0  
+Toggling: 1 → 0 or 0 → 1  
 
 To set a bit, the bitwise OR operation is needed with a bit mask that only contains 1 in the position of the bit to be set, and 0 in every other position. The OR operation will with the specified bit mask will only change the bit when its position is the value 0.  
 
