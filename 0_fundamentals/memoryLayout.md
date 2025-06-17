@@ -17,5 +17,20 @@ Example:
 0x12345678 (hexadecimal, two digits is one byte)
 
 little-endian: 0x78 0x56 0x34 0x12 (0x78 takes the lower address)
-big-endian: 0x12 0x34 x56 0x78 (0x12 takes the lower address)
+big-endian: 0x12 0x34 0x56 0x78 (0x12 takes the lower address)
 ```
+
+## Storing and Accessing Data
+
+The amount of memory in a computer is fixed, and memory has "slots" that store a fixed number of bits, usually 1 byte. 
+
+For data larger than 8 bits (1 byte), more memory slots are needed back-to-back (contiguous).
+
+### Pointers
+As mentioned earlier, each slot in memory has an address to be easily accessed by the CPU. The memory address of some data can be stored in another slot of memory, which is then called a pointer.
+
+### Reading Memory
+Since certain data types can take up a different amount of bytes in memory, it is important for the CPU to know how many bytes to read for a particular instruction. This is given by the program, written by the programmer.
+
+
+![Visualization of computer memory](https://www.cs.emory.edu/~cheung/Courses/255/Syllabus/4-intro/FIGS/memory01b.gif)
