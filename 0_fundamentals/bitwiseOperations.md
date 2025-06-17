@@ -86,6 +86,8 @@ To toggle a bit, the bitwise XOR operation is needed with a bit mask that only c
 | (OR)
 ^ (XOR)
 ~ (NOT)
+>> (Right shift)
+<< (Left shift)
 ```
 
 
