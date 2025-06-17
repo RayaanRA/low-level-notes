@@ -34,10 +34,10 @@ What is 4B5 in decimal?
 
 ### Conversions
 
-**Binary to Hexadecimal**
+**Binary to Hexadecimal**  
 Divide the binary number into groups of 4. If there is a remainder, add 0s on the left to create a group of 4. Convert each binary group of 4 to decimal, then hexadecimal. The digits in order form the hexadecimal number.
 
-**Hexadecimal to Binary**
+**Hexadecimal to Binary**  
 Convert each hexadecimal digit to decimal, then convert each of those numbers into a 4 bit binary number. Combine them in order of the original hexadecimal to obtain the binary number.
 
 ### Importance of the Hexadecimal System
