@@ -57,3 +57,9 @@ Example:
 MOV TOTAL, 48    ; Transfer the value 48 in the 
                  ; memory variable TOTAL
 ```
+
+## Assemble and Linker
+An assembler takes assembly code and translates it to machine code. This is then stored in an object file containing the binary representation of the program.  
+
+
+The linker module combines external programs like libraries and shared components to create the final executable.
